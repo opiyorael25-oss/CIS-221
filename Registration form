@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h2>User Registration Form</h2>
+  <form action="/submit" method="post">
+    
+    <!-- Text fields -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Number -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+    <!-- Telephone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+254-700-000000"><br><br>
+
+    <!-- URL -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website"><br><br>
+
+    <!-- Date & Time -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="regtime">Registration Time:</label>
+    <input type="datetime-local" id="regtime" name="regtime"><br><br>
+
+    <!-- Month -->
+    <label for="favmonth">Favorite Month:</label>
+    <input type="month" id="favmonth" name="favmonth"><br><br>
+
+    <!-- Week -->
+    <label for="favweek">Favorite Week:</label>
+    <input type="week" id="favweek" name="favweek"><br><br>
+
+    <!-- Select (dropdown) -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Checkboxes -->
+    <p>Hobbies:</p>
+    <input type="checkbox" id="reading" name="hobbies" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="sports" name="hobbies" value="sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="hobbies" value="music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Textarea -->
+    <label for="bio">Short Bio:</label><br>
+    <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+    <button type="button" onclick="alert('Help Section Coming Soon!')">Help</button>
+
+  </form>
+</body>
+</html>
